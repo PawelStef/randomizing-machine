@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: randomizing-machine
+server:
+  port: 8060
