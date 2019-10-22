@@ -19,16 +19,14 @@ public class RandomizingController {
     public String randomWord() {
         Random random = new Random();
 
-        int a = random.nextInt(6);
+        int a = random.nextInt(words.length-1);
         return words[a];
 
     }
 
     @GetMapping("/number")
     public String randomNumber() {
-        Random random = new Random();
 
-        int a = random.nextInt(6);
-        return numbers[a];
+        return numbers[new Random().nextInt(numbers.length-1)];
     }
 }
